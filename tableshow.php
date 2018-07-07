@@ -19,7 +19,7 @@
 		$qr="select f.region, b.b_id,b.sch_start,b.sch_end,f.f_name,e.eq_name from booking as b,equipment as e,farmer as f where b.f_id=f.f_id and b.eq_id=e.eq_id"
 		$rs=mysqli_query($link,$qr);
 		$row=mysqli_fetch_row($rs)
-		echo "<table class='table table-striped table-bordered'><tr><th>Region</th>
+		echo "<table class='table table-striped table-bordered table-hover'><tr><th>Region</th>
         <th>Booking ID</th>
         <th>Booking Date</th>
         <th>End Date</th>
