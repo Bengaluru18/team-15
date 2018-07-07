@@ -7,7 +7,7 @@
 	$password   = "shub2306";
 	$db         = "id5251226_codeforgood";
 
-// Create a connection
+
 		$conn = mysqli_connect( $server, $username, $password, $db );
 
 // Check connection
