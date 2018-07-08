@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shubhamkumar.code_for_good.center_head_login">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter username"
+            android:id="@+id/username"/>
+        <EditText
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Enter password"
+            android:id="@+id/password"/>
+        <Button
+            android:id="@+id/newlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@color/colorPrimary"
+            android:text="SIGN IN"
+            android:textColor="@android:color/white"/>
+
+
+
+
+    </LinearLayout>
+</AbsoluteLayout>
