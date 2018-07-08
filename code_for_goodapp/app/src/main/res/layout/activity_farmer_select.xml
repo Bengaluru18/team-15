@@ -1,0 +1,248 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ddd"
+    tools:context="com.example.shubhamkumar.code_for_good.farmer_select">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:background="#fff"
+            android:id="@+id/loading"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_height="match_parent" android:text="Please wait... Loading results..."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#2a6045"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="75dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:layout_weight="1" android:text="Showing results for date range"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:gravity="center_vertical"
+                android:id="@+id/resultsDate"
+                android:textColor="#fff"
+                android:layout_weight="1" android:text="10-Jul-2018 - 25-Jul-2015"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tractorLayout"
+            android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/t" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/tractor"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dip"
+                        android:textSize="18dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:text="Tractor" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dip"
+                        android:id="@+id/tractorDateSelected"
+                        android:textColor="#333"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical"
+                        android:text="Rs. 3000/day" />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/tractorSpinner"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"></Spinner>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/ploughLayout"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/plough" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dip"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:text="Fixed Plough" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/ploughDateSelected"
+                        android:padding="5dip"
+                        android:textColor="#333"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical"
+                        android:text="Rs. 500/day" />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/ploughSpinner"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"></Spinner>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/cutterLayout"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/bcutter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:padding="5dip"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:text="Brush Cutter" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/cutterDateSelected"
+                        android:layout_weight="1"
+                        android:padding="5dip"
+                        android:textColor="#333"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical"
+                        android:text="Rs. 360/day" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/cutterSpinner"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"></Spinner>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                android:background="#0dac5a"
+                android:textAlignment="center"
+                android:padding="5dip"
+                android:text="Reserve Equipment"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
