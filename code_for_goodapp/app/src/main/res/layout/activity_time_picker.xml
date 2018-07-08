@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context="com.example.shubhamkumar.code_for_good.time_picker">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" android:text="PLEASE SELECT DATE RANGE TO SEE AVAILABLE EQUIPMENT"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/start_date"
+            android:layout_margin="20dp"
+            android:enabled="false"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            />
+        <Button
+            android:id="@+id/button1"
+            android:layout_margin="20dp"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Start Date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_margin="20dp"
+            android:layout_width="0dp"
+            android:enabled="false"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_date"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_margin="20dp"
+            android:layout_width="100dp"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="End Date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/check_availability"
+            android:layout_margin="20dp"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+
+
+
+            android:text="check availibility" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
