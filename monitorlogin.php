@@ -1,7 +1,7 @@
 <?php
-	
+	session_start();
 	if( isset( $_POST['login'] ) ) {
-	    
+	     $hashedPass="";
     
     // build a function to validate data
     function validateFormData( $formData ) {
@@ -34,13 +34,22 @@
                         }	
 				 if(  $formPass ==$hashedPass  ) {
             
-        
-                echo"login successfull";
-            //header( "Location: clients.php" );
+					$_SESSION['loggedInUser'] = $formadmin;
+                    
+                if(	$_SESSION['loggedInUser']=="Project Monitor")
+                {
+                    header( "Location: HTML/page-analytic-project.html" );
+                }
+                else
+                {
+                    
+                    header( "Location: HTML/page-analytic-state.html" );
+                }
         } 
 				else
 				{
-					echo "login unsuccessfull";
+					
+					 header( "Location: page-login-failed.html" );
 					
 				}
 }
